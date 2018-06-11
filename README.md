@@ -32,6 +32,8 @@ After the deployment is complete you can create an alias for your custom domain:
 now alias <unique-deployment-url> captcha.<your-domain.com>
 ```
 
+Zeit may create multiple instances of your deployment by default, you should [scale](https://zeit.co/docs/features/scaling) your captcha service according to your needs.
+
 You may also wish to use [path aliases](https://zeit.co/docs/features/path-aliases) to unify your microservices on a single domain:
 
 Create a file called rules.json and add the following content:
