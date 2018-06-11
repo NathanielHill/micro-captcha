@@ -1,0 +1,19 @@
+{
+  "name": "micro-captcha",
+  "version": "1.0.0",
+  "description": "Simple Google ReCAPTCHA microservice",
+  "repository": "https://github.com/NathanielHill/micro-captcha",
+  "author": "Nathaniel Hill <nata@goguna.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "now": {
+    "env": [
+      "CAPTCHA_SECRET"
+    ]
+  },
+  "dependencies": {
+    "isomorphic-unfetch": "^2.0.0"
+  }
+}
