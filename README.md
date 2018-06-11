@@ -22,8 +22,8 @@ now -e CAPTCHA_SECRET=<your-secret-key> NathanielHill/micro-captcha
 Or if you'd like to use [now secrets](https://zeit.co/docs/getting-started/secrets) to store the key:
 
 ```
-now secrets add CAPTCHA_SECRET "<your-secret-key>"
-now -e CAPTCHA_SECRET=@CAPTCHA_SECRET NathanielHill/micro-captcha
+now secrets add captcha_secret "<your-secret-key>"
+now -e CAPTCHA_SECRET=@captcha_secret NathanielHill/micro-captcha
 ```
 
 After the deployment is complete you can create an alias for your custom domain:
