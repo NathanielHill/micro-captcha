@@ -13,11 +13,13 @@ now NathanielHill/micro-captcha
 
 You'll be asked to provide `CAPTCHA_SECRET` which is the secret key provided by Google.
 
-You can also provide the key on the command line:
+You can also provide the key on the command line with the `-e` option:
 
 ```
 now -e CAPTCHA_SECRET=<your-secret-key> NathanielHill/micro-captcha
 ```
+
+> You may also set the port with the `PORT` environment variable.
 
 Or if you'd like to use [now secrets](https://zeit.co/docs/getting-started/secrets) to store the key:
 
