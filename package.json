@@ -1,6 +1,6 @@
 {
   "name": "micro-captcha",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Simple Google ReCAPTCHA microservice",
   "repository": "https://github.com/NathanielHill/micro-captcha",
   "author": "Nathaniel Hill <nata@goguna.com>",
