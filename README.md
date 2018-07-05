@@ -1,7 +1,11 @@
 # Micro-Captcha
-Simple Google ReCAPTCHA microservice for [Zeit Now](https://zeit.co/now)
+Simple Google ReCAPTCHA microservice for [Zeit Now](https://zeit.co/now).
+
+Can also be imported and used a node module.
 
 ## Usage
+<details>
+<summary>Deployed to Zeit Now</summary>
 
 If you haven't installed `now` already, start by following [these instructions](https://zeit.co/docs/getting-started/installation)
 
@@ -54,6 +58,32 @@ Then run the following command:
 ```
 now alias <your-domain.com> -r rules.json
 ```
+</details>
+
+<details>
+<summary>As a node module</summary>
+
+Can also be used as a node module which can be useful for local development.
+
+To install:
+
+```
+yarn add micro-captcha
+```
+or
+```
+npm install --save micro-captcha
+```
+
+The default export takes a config option (where `server` is the only required key) and runs the microservice. Usage will look something like this:
+
+```
+const microCaptcha = require('micro-captcha')
+
+microCaptcha({ secret: process.env.CAPTCHA_SECRET, port: process.env.PORT, log = true })
+```
+
+</details>
 
 ## Author
 
