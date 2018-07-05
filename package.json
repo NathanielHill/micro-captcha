@@ -10,7 +10,7 @@
   "bugs": "https://github.com/NathanielHill/micro-captcha/issues",
   "homepage": "https://github.com/NathanielHill/micro-captcha",
   "author": "Nathaniel Hill <nata@goguna.com>",
-  "keywords": [],
+  "keywords": ["microservice", "micro-service", "captcha", "recaptcha", "google-captcha", "google-recaptcha", "zeit", "now"],
   "license": "MIT",
   "scripts": {
     "start": "node server.js"
