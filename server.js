@@ -12,7 +12,6 @@ const LOG = !(process.env.LOG === 'false')
 
 createServer((req, res) => {
   let RESPONSE = parse(req.url, true).query.response
-  console.log(RESPONSE)
   if (!RESPONSE) {
     res.writeHead(400)
     res.end()
