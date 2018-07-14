@@ -1,4 +1,7 @@
 # Micro-Captcha
+
+[![npm version](https://badge.fury.io/js/micro-captcha.svg)](https://badge.fury.io/js/micro-captcha)
+
 Simple Google ReCAPTCHA microservice for [Zeit Now](https://zeit.co/now).
 
 Can also be imported and used a node module.
