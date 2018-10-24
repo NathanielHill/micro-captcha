@@ -1,0 +1,5 @@
+*
+!yarn.lock
+!package.json
+!index.js
+!server.js
