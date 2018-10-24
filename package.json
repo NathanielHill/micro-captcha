@@ -24,11 +24,6 @@
   "scripts": {
     "start": "node server.js"
   },
-  "now": {
-    "env": [
-      "CAPTCHA_SECRET"
-    ]
-  },
   "dependencies": {
     "isomorphic-unfetch": "^3.0.0"
   }
