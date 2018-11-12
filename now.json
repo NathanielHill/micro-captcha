@@ -6,7 +6,7 @@
   ],
   "build": {
     "env": {
-      "COVERALLS_REPO_TOKEN": "@coveralls_repo_token",
+      "COVERALLS_REPO_TOKEN": "@micro-captcha_coveralls_repo_token",
       "COVERALLS_SERVICE_NAME": "ZEIT Now"
     }
   }
