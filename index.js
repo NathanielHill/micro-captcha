@@ -2,9 +2,9 @@ const { createServer } = require('http')
 const { parse } = require('url')
 const fetch = require('isomorphic-unfetch')
 
-const microCaptcha = ({secret, port = '80', log = true}) => {
-
-  createServer((req, res) => {
+module.exports = ({ secret, port = '3000', log = true }) => {
+  if (!secret) throw new Error('Secret is required!')
+  return (req, res) => {
     let RESPONSE = parse(req.url, true).query.response
     if (!RESPONSE) {
       res.writeHead(400)
@@ -28,7 +28,5 @@ const microCaptcha = ({secret, port = '80', log = true}) => {
           }
         })
     }
-  }).listen(port)
+  }
 }
-
-module.exports = microCaptcha

@@ -1,9 +1,13 @@
 {
-  "type": "docker",
-  "features": {
-    "cloud": "v2"
-  },
-  "env": [
-    "CAPTCHA_SECRET"
-  ]
+  "name": "micro-captcha",
+  "version": 2,
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build" }
+  ],
+  "build": {
+    "env": {
+      "COVERALLS_REPO_TOKEN": "@coveralls_repo_token",
+      "COVERALLS_SERVICE_NAME": "ZEIT Now"
+    }
+  }
 }

@@ -1,6 +1,6 @@
 {
   "name": "micro-captcha",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "main": "index.js",
   "description": "Simple Google ReCAPTCHA microservice",
   "repository": {
@@ -22,9 +22,16 @@
   ],
   "license": "MIT",
   "scripts": {
-    "start": "node server.js"
+    "now-build": "printenv && yarn test && yarn report",
+    "test": "nyc --reporter=html --reporter=text --report-dir=dist/ ava --tap --timeout=3000",
+    "report": "nyc report --reporter=text-lcov | coveralls"
   },
   "dependencies": {
     "isomorphic-unfetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "coveralls": "^3.0.2",
+    "nyc": "^13.1.0"
   }
 }

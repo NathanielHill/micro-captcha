@@ -5,7 +5,7 @@ if (!process.env.CAPTCHA_SECRET) {
 }
 
 const CAPTCHA_SECRET = process.env.CAPTCHA_SECRET
-const PORT = parseInt(process.env.PORT, 10) || 80
+const PORT = parseInt(process.env.PORT, 10) || 3000
 const LOG = !(process.env.LOG === 'false')
 
-microCaptcha({ secret: CAPTCHA_SECRET, port: PORT, log: LOG })
+module.exports = microCaptcha({ secret: CAPTCHA_SECRET, port: PORT, log: LOG })
