@@ -30,7 +30,7 @@
     "isomorphic-unfetch": "^3.0.0"
   },
   "devDependencies": {
-    "ava": "^2.4.0",
+    "ava": "^3.1.0",
     "coveralls": "^3.0.6",
     "nyc": "^14.1.1"
   }
